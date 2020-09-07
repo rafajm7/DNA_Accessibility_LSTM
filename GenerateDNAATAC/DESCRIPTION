@@ -1,0 +1,27 @@
+Package: GenerateDNAATAC
+Type: Package
+Title: Construction of the training set that relates dna sequences from regions of the genome to the fold change in the ATAC-Seq of their nearest gene.
+Version: 0.1.0
+Authors: Rafael Jordá
+Maintainer: Rafael Jordá <rafajorda.rj@gmail.com>
+Description: This package, given a .BAM file with the genome of a mouse before creating an insult through injection,
+             and another .BAM one hour after the injection, extracts the DNA of different regions of its genome,
+             concretely promoters, 3' UTRs and 5' UTRs, and builds a dataframe for each type of region relating them to the change 
+             in the ATAC-Seq of their nearest gene before and after the injection.
+Depends: R (>= 3.5.3)
+License: Creative Commons
+Encoding: UTF-8
+LazyData: true
+Imports:
+     refGenome,
+     dplyr,
+     tidyverse,
+     bamsignals,
+     BiocManager,
+     BSgenome,
+     BSgenome.Mmusculus.UCSC.mm10,
+     SetupSequences,
+     Rsamtools,
+     GenomicRanges
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
