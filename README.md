@@ -1,4 +1,4 @@
-# LSTM Application to the prediction of DNA's openings
+# LSTM Application to the prediction of DNA accessibility
 
 DNA transcription is the first process of gene expression, through which the information contained in the DNA sequence is transferred to a copy of RNA for the subsequent generation of proteins. For this process to occur, DNA must be "open", in a state in which it is physically enabled for reading and decoding. However, not all regions of the genome are equally accessible when transcribing. There are sequencing methods, such as ATAC-Seq, that allow the identification of regions with a higher transcription capacity for the generation of proteins. The value returned by the ATAC-Seq method for each position of the genome corresponds to a measure of the opening of the DNA at that point to transcribe to protein.
 
